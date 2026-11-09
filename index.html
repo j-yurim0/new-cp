@@ -1,6 +1,6 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>포장요청서 자동 비교</title><style>body{margin:0;background:#f2f6f8;font:16px 'Malgun Gothic',sans-serif;color:#203c49;display:grid;min-height:100vh;place-items:center}main{background:white;max-width:560px;padding:40px;border:1px solid #dbe4e8;border-radius:14px;line-height:1.9}h1{font-size:24px}a{display:inline-block;background:#126d5a;color:white;padding:10px 18px;border-radius:7px;text-decoration:none}code{word-break:break-all}</style></head><body><main><h1>포장요청서 자동 비교</h1><p id="status">업무 화면으로 이동하고 있습니다.</p><a id="open" hidden target="_top">업무 화면 열기</a></main><script>
 // 관리자 최초 1회 설정: 아래 값만 새로운 Apps Script 웹 앱 배포의 /exec URL로 바꿔 주세요.
-const APP_URL = "https://script.google.com/macros/s/AKfycbyY-bG5HaxVXv9qZRn_3cAjA-aRfRv3aOg4ZG8teVxniz8-SW-ExUGKfpL3gmWF6i0SNg/exec";
+const APP_URL = "https://script.google.com/macros/s/AKfycby7X1fD0SIZhnV5oaVgNc4vJM4NyH4EYern0wSevlxhxT8W8HR5mYS95Ef0HjfAcmdrlg/exec";
 const valid=/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/.test(APP_URL);
 if(valid){document.getElementById('open').href=APP_URL;document.getElementById('open').hidden=false;window.location.replace(APP_URL);}else{document.getElementById('status').textContent='관리자 설정이 필요합니다. 이 index.html의 APP_URL에 새 Apps Script 웹 앱 배포 URL을 한 번 입력해 주세요. 사용자별 조회키 설정은 필요하지 않습니다.';}
 </script></body></html>
